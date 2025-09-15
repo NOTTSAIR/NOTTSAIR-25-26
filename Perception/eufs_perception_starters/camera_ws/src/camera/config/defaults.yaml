@@ -1,0 +1,11 @@
+/**:
+  ros__parameters:
+    topics:
+      - "/zed/left/image_rect_color"
+      - "/zed/right/image_rect_color"
+      - "/zed/image_raw"
+      - "/zed/depth/image_raw"
+    window_title: "camera"
+    font_scale: 0.8
+    thickness: 2
+
