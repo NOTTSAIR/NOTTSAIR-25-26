@@ -171,26 +171,6 @@ run_static_a    # launch only
 
 ---
 
-## .gitignore (recommended in `static_a/`)
-```
-build/
-install/
-log/
-# CMake
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-# Python cache
-__pycache__/
-*.py[cod]
-# IDEs
-.vscode/
-.idea/
-# OS
-.DS_Store
-Thumbs.db
-```
 
 ---
 
