@@ -1,0 +1,24 @@
+# ROS2 / colcon build artifacts
+build/
+install/
+log/
+
+# CMake build system
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode / JetBrains IDE settings
+.vscode/
+.idea/
+
+# Other OS-specific junk
+.DS_Store
+Thumbs.db
