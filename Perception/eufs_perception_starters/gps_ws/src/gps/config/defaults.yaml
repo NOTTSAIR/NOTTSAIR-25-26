@@ -1,0 +1,7 @@
+/**:
+  ros__parameters:
+    topic: "/gps"          # matches your sim
+    refresh_hz: 15.0
+    history_secs: 120.0
+    max_points: 20000
+
