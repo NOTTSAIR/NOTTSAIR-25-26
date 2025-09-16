@@ -170,9 +170,3 @@ run_static_a    # launch only
   ```
 
 ---
-
-
----
-
-## Licence
-MIT
