@@ -1,0 +1,22 @@
+/**:
+  ros__parameters:
+    input_image_topic: "/zed/left/image_rect_color"
+    annotated_image_topic: "/cones/annotated"
+    detections_topic: "/cones/detections"
+
+    model_path: "/home/tyler/Documents/NOTTSAIR-25-26/Perception/Yolo/yolo_ws/src/yolo_infer/best.torchscript"
+    input_width: 640
+    input_height: 640
+    conf_threshold: 0.35
+    nms_threshold: 0.45
+
+    # post-classification
+    min_colour_fraction: 0.10   # at least 10 percent of ROI must be that colour
+    colour_shrink_px: 4         # crop bbox edges before colour test
+
+    use_cuda: true
+    qos_best_effort: true
+    draw_labels: true
+    draw_boxes: true
+    window_title: "YOLO Cones"
+
