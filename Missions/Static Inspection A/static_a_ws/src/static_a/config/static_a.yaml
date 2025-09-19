@@ -1,0 +1,14 @@
+eufs_static_a:
+  ros__parameters:
+    topic: "/cmd"
+    steer_amp_rad: 0.6
+    t_sweep_s: 6.0
+    t_accel_s: 10.0
+    t_decel_s: 5.0
+    rate_hz: 50.0
+    auto_set_mission: true
+
+    # Tune these if it spins up / stops too slowly/quickly
+    accel_up: 1.0      # m/s^2 during acceleration phase
+    accel_down: -2.0   # m/s^2 during deceleration phase (negative)
+

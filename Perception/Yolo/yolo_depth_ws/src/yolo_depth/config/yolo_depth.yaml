@@ -1,0 +1,33 @@
+yolo_depth_node:
+  ros__parameters:
+    # Inputs (match your topic list)
+    rgb_topic: "/zed/left/image_rect_color"
+    depth_topic: "/zed/depth/image_raw"           # depth in metres
+    # Optional: if your depth is in mm as 16UC1, the node will auto-convert
+
+    # Outputs
+    annotated_image_topic: "/cones/annotated_depth"
+    detections_topic: "/cones/detections"
+
+    # YOLO
+    model_path: "/home/tyler/Documents/NOTTSAIR-25-26/Perception/Yolo/best.torchscript"
+    input_width: 640
+    input_height: 640
+    conf_threshold: 0.35
+    nms_threshold: 0.45
+    use_cuda: true
+    draw_boxes: true
+    draw_labels: true
+    window_title: "YOLO Depth POC"
+
+    # Colour post classification on RGB crop
+    min_colour_fraction: 0.10
+    colour_shrink_px: 4
+
+    # Depth sampling inside bbox
+    sample_mode: "grid"   # centre or grid
+    grid_n: 5
+    inner_ratio: 0.4
+    min_valid_frac: 0.2
+    min_range_m: 0.5
+    max_range_m: 60.0

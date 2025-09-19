@@ -1,0 +1,7 @@
+/**:
+  ros__parameters:
+    topic: "/velodyne_points"
+    decimate: 3
+    refresh_hz: 25.0
+    scatter_size: 900
+    zoom_init: 0.6
