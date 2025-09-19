@@ -4,7 +4,9 @@
     annotated_image_topic: "/cones/annotated"
     detections_topic: "/cones/detections"
 
-    model_path: "/home/tyler/Documents/NOTTSAIR-25-26/Perception/Yolo/yolo_ws/src/yolo_infer/best.torchscript"
+    model_path: "/home/tyler/Documents/NOTTSAIR-25-26/Perception/Yolo/best.torchscript"
+
+
     input_width: 640
     input_height: 640
     conf_threshold: 0.35
